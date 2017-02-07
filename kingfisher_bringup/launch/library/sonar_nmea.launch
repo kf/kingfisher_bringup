@@ -5,6 +5,7 @@
     <node pkg="nmea_comms" type="serial_node" name="nmea_sonar_serial_node">
       <param name="port" value="$(optenv KINGFISHER_SONAR_PORT /dev/clearpath/sonar)"/>
       <param name="baud" value="$(optenv KINGFISHER_SONAR_BAUD 4800)"/>
+      <param name="frame_id" value="sbes"/>
     </node>
   </group>
 </launch>
